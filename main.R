@@ -1,3 +1,4 @@
+# Добавлены рабочие директории
 # setwd("C:/Users/Grigorev-EE/Documents/Work/2017.02/xlsx")
 setwd("C:/Users/Grigorev-EE/Documents/Work/R-Projects/Git/xlsx")
 
