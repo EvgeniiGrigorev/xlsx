@@ -1,12 +1,15 @@
-setwd("D:/Work/R-Projects/R/xlsx")
+# setwd("C:/Users/Grigorev-EE/Documents/Work/2017.02/xlsx")
+setwd("C:/Users/Grigorev-EE/Documents/Work/R-Projects/Git/xlsx")
 
-Sys.setenv(JAVA_HOME='C:\\Program Files\\Java\\jre1.8.0_121') # for 64-bit version
+# Sys.setenv(JAVA_HOME='C:\\Program Files\\Java\\jre1.8.0_121') # for 64-bit version
+Sys.setenv(JAVA_HOME='C:\\Program Files\\Java\\jre1.8.0_111') # for 64-bit version
 library(rJava)
 
 library(xlsx)
 
 # Reading xlsx sheets
-datDir <- c("D:/Work/R-Projects/R/xlsx")
+# datDir <- c("D:/Work/R-Projects/R/xlsx")
+datDir <- c("C:/Users/Grigorev-EE/Documents/Work/R-Projects/Git/xlsx")
 files <- list.files(datDir, pattern = ".xlsx",full.names=T)
 
 for (i in seq_along(files)) {
