@@ -1,3 +1,5 @@
+rm(list=ls())
+
 # Добавлены рабочие директории
 # setwd("C:/Users/Grigorev-EE/Documents/Work/2017.02/xlsx")
 setwd("C:/Users/Grigorev-EE/Documents/Work/R-Projects/Git/xlsx")
@@ -23,9 +25,12 @@ files[1]
 # Read the second sheet, Header = True
 base_2 <- read.xlsx(files[1],2)
 
-
-
 head(base_2)
+
+# Записываем полученные данные
+write.table(base_1, file = "base_1.txt", append = FALSE, quote = TRUE, sep = "\t",
+            eol = "\n", na = "", dec = ".", row.names = FALSE,
+            col.names = TRUE)
 
 
 # Writing xlsx sheets
